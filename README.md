@@ -47,6 +47,10 @@ Choose "New Extension (TypeScript)" as the type of extension.
 1. Open the `src/extension.ts` file in your code editor.
 2. Replace the content of `extension.ts` with the provided code snippet.
 
+   ![code](https://github.com/Apurv428/VSCode-Plugin_Hello-World/assets/84929607/29a88f10-4ce4-4803-897f-dcc1256517bf)
+
+
+
 ## Testing Your Extension
 
 1. Debug your extension by pressing `Ctrl+Shift+D` or selecting "Run & Debug" from the menu. Then press `F5` to run your extension.
