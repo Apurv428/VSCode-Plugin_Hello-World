@@ -49,8 +49,6 @@ Choose "New Extension (TypeScript)" as the type of extension.
 
    ![code](https://github.com/Apurv428/VSCode-Plugin_Hello-World/assets/84929607/29a88f10-4ce4-4803-897f-dcc1256517bf)
 
-
-
 ## Testing Your Extension
 
 1. Debug your extension by pressing `Ctrl+Shift+D` or selecting "Run & Debug" from the menu. Then press `F5` to run your extension.
