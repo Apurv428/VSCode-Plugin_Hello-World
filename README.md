@@ -1,71 +1,59 @@
-# hellow-world README
+# VSCode Plugin: "Hello World!"
 
-This is the README for your extension "hellow-world". After writing up a brief description, we recommend including the following sections.
+## Overview
 
-## Features
+VS Code extensions enable developers to customize and enhance the functionality of the editor. This guide provides an overview of VS Code extension development, including creating a simple "Hello World" extension.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### Basics of Creating a New Extension
 
-For example if there is an image subfolder under your extension project workspace:
+- **Extension Types:** VS Code supports various extension types, including language support, themes, snippets, debuggers, etc.
+- **Extension Manifest:** Defined by a `package.json` file containing metadata like name, version, description, and activation events.
+- **Extension Language:** Develop using JavaScript or TypeScript.
 
-\!\[feature X\]\(images/feature-x.png\)
+### Structure of an Extension Project
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- **Extension Workspace:** Typically consists of folders containing source code, configuration files, and assets.
+- **Main Extension File:** Entry point where functionality is defined (e.g., `extension.ts` or `extension.js`).
+- **Additional Files:** Include `package.json`, `README.md`, and configuration files.
 
-## Requirements
+### Key Concepts
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- **Activation Events:** Determine when an extension activates and loads into VS Code (e.g., opening workspace, executing command).
+- **Contribution Points:** Define where and how an extension contributes functionality (e.g., commands, menus, keybindings).
+- **Extension API:** Provides an extensive API for interacting with the editor's UI, workspace information, and performing tasks.
 
-## Extension Settings
+## Step-by-Step Guide to Creating a "Hello World" Extension
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Follow these steps to create a simple VS Code extension that prints "Hello World" when a command is executed:
 
-For example:
+### Step 1: Set Up Your Development Environment
 
-This extension contributes the following settings:
+1. Ensure Node.js is installed on your machine.
+2. Install Yeoman globally by running:
+   ```bash
+   $ npm install --global yo generator-code
+## Generating a New Extension Project
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+To generate a new extension project using Yeoman, run the following command in your terminal:
 
-## Known Issues
+```bash
+$ yo code
+```
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Choose "New Extension (TypeScript)" as the type of extension.
 
-## Release Notes
+## Implementing the "Hello World" Functionality
 
-Users appreciate release notes as you update your extension.
+1. Open the `src/extension.ts` file in your code editor.
+2. Replace the content of `extension.ts` with the provided code snippet.
 
-### 1.0.0
+## Testing Your Extension
 
-Initial release of ...
+1. Debug your extension by pressing `Ctrl+Shift+D` or selecting "Run & Debug" from the menu. Then press `F5` to run your extension.
+2. This will open a new VS Code window titled "Extension Development."
+3. In the Extension Development window, navigate to the command palette (`Ctrl+Shift+P`) and search for ‘>Say Hello’.
+4. Select the command "Extension: Say Hello" from the command palette to trigger the execution of your extension, which displays the "Hello World!" message.
 
-### 1.0.1
+## Demo
 
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+[Here is the Demo](https://drive.google.com/file/d/1Tn65bYPPfZZ4xpmzBb4zXSrR7_9vvIL1/view?usp=sharing)
